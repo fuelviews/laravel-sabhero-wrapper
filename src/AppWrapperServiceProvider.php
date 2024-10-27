@@ -25,11 +25,11 @@ class AppWrapperServiceProvider extends PackageServiceProvider
             });
 
         $this->publishes([
-            __DIR__ . '/../resources/views/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
+            __DIR__.'/../database/seeders/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
         ], 'app-wrapper-seeders');
 
         $this->publishes([
-            __DIR__ . '/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
+            __DIR__.'/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
         ], 'app-wrapper-welcome');
     }
 
