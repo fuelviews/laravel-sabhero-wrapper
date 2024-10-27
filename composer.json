@@ -1,6 +1,6 @@
 {
     "name": "fuelviews/app-wrapper",
-    "description": "Laravel layouts wrapper package",
+    "description": "App Wrapper Package",
     "keywords": [
         "fuelviews",
         "laravel",
