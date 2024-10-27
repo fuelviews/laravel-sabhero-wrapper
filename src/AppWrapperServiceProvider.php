@@ -25,7 +25,7 @@ class AppWrapperServiceProvider extends PackageServiceProvider
             });
 
         $this->publishes([
-            __DIR__ . '/../resources/views/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
+            __DIR__ . '/../database/seeders/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
         ], 'app-wrapper-seeders');
 
         $this->publishes([
