@@ -5,8 +5,6 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/app-wrapper/fix-php-code-style-issues.yml?label=code%20style&style=flat-square)](https://github.com/fuelviews/app-wrapper/actions?query=workflow%3A"Fix+PHP+code+style+issues")
 [![Total Downloads](https://img.shields.io/packagist/dt/fuelviews/app-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/app-wrapper)
 
-App Wrapper Package
-
 ## Installation
 
 You can install the package via composer:
