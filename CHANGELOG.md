@@ -2,6 +2,14 @@
 
 All notable changes to `app-wrapper` will be documented in this file.
 
+## v0.0.4 - 2024-11-10
+
+### What's Changed
+
+* Bump symfony/process from 7.1.5 to 7.1.7 in the composer group across 1 directory by @dependabot in https://github.com/fuelviews/app-wrapper/pull/5
+
+**Full Changelog**: https://github.com/fuelviews/app-wrapper/commits/v0.0.4
+
 ## v0.0.3 - 2024-11-10
 
 ### What's Changed
