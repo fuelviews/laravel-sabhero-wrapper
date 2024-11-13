@@ -2,6 +2,15 @@
 
 All notable changes to `app-wrapper` will be documented in this file.
 
+## v0.0.5 - 2024-11-13
+
+### What's Changed
+
+* Bump laravel/framework from 11.29.0 to 11.31.0 in the composer group across 1 directory by @dependabot in https://github.com/fuelviews/app-wrapper/pull/6
+* Refactored app.blade.php to use class_exists instead of View::exists for checking if a class exists and config values for enabling/disabling certain components. by @thejmitchener in https://github.com/fuelviews/app-wrapper/pull/7
+
+**Full Changelog**: https://github.com/fuelviews/app-wrapper/commits/v0.0.5
+
 ## v0.0.4 - 2024-11-10
 
 ### What's Changed
