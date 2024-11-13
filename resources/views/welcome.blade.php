@@ -127,4 +127,6 @@
             </div>
         </div>
     </div>
+
 </x-app-wrapper::layouts.app>
+
