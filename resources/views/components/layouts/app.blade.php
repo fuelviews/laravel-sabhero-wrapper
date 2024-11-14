@@ -58,5 +58,6 @@
     @if (class_exists(\Livewire\Livewire::class) && config('app-wrapper.livewire_enabled'))
         @livewireScripts
     @endif
+
 </body>
 </html>
