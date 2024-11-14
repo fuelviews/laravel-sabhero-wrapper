@@ -2,6 +2,14 @@
 
 All notable changes to `app-wrapper` will be documented in this file.
 
+## v0.0.8 - 2024-11-14
+
+### What's Changed
+
+* Remove unnecessary whitespace at the end of the file in app.blade.php. by @thejmitchener in https://github.com/fuelviews/app-wrapper/pull/10
+
+**Full Changelog**: https://github.com/fuelviews/app-wrapper/compare/v0.0.6...v0.0.8
+
 ## v0.0.5 - 2024-11-13
 
 ### What's Changed
