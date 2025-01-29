@@ -1,12 +1,12 @@
 {
-    "name": "fuelviews/sabhero-core",
-    "description": "App Wrapper Package",
+    "name": "fuelviews/laravel-sabhero-wrapper",
+    "description": "SAB Hero Wrapper Package",
     "keywords": [
         "fuelviews",
         "laravel",
-        "sabhero-core"
+        "laravel-sabhero-wrapper"
     ],
-    "homepage": "https://github.com/fuelviews/sabhero-core",
+    "homepage": "https://github.com/fuelviews/laravel-sabhero-wrapper",
     "license": "MIT",
     "authors": [
         {
@@ -44,7 +44,7 @@
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-sabhero-core --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-sabhero-wrapper --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
