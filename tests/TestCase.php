@@ -1,8 +1,8 @@
 <?php
 
-namespace Fuelviews\SabHeroCore\Tests;
+namespace Fuelviews\SabHeroWrapper\Tests;
 
-use Fuelviews\SabHeroCore\SabHeroWrapperServiceProvider;
+use Fuelviews\SabHeroWrapper\SabHeroWrapperServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 

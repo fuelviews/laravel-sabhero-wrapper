@@ -1,8 +1,8 @@
 <?php
 
-namespace Fuelviews\SabHeroCore;
+namespace Fuelviews\SabHeroWrapper;
 
-use Fuelviews\SabHeroCore\Models\Page;
+use Fuelviews\SabHeroWrapper\Models\Page;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
@@ -15,7 +15,7 @@ class SabHeroWrapperServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('sabhero-wrapper')
-            ->hasConfigFile()
+            ->hasConfigFile('sabhero-wrapper')
             ->hasViews()
             ->hasMigration('create_pages_table')
             ->hasInstallCommand(function (InstallCommand $command) {

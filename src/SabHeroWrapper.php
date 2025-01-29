@@ -1,5 +1,7 @@
 <?php
 
-namespace Fuelviews\SabHeroCore;
+namespace Fuelviews\SabHeroWrapper;
 
-class SabHeroWrapper {}
+class SabHeroWrapper
+{
+}
