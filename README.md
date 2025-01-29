@@ -1,22 +1,22 @@
 # App Wrapper Package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/fuelviews/app-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/app-wrapper)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/app-wrapper/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/fuelviews/app-wrapper/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/app-wrapper/fix-php-code-style-issues.yml?label=code%20style&style=flat-square)](https://github.com/fuelviews/app-wrapper/actions?query=workflow%3A"Fix+PHP+code+style+issues")
-[![Total Downloads](https://img.shields.io/packagist/dt/fuelviews/app-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/app-wrapper)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/fuelviews/laravel-sabhero-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/laravel-sabhero-wrapper)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-sabhero-wrapper/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/fuelviews/laravel-sabhero-wrapper/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-sabhero-wrapper/fix-php-code-style-issues.yml?label=code%20style&style=flat-square)](https://github.com/fuelviews/laravel-sabhero-wrapper/actions?query=workflow%3A"Fix+PHP+code+style+issues")
+[![Total Downloads](https://img.shields.io/packagist/dt/fuelviews/laravel-sabhero-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/laravel-sabhero-wrapper)
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require fuelviews/app-wrapper
+composer require fuelviews/laravel-sabhero-wrapper
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="app-wrapper-config"
+php artisan vendor:publish --tag="sabhero-wrapper-config"
 ```
 
 This is the contents of the published config file:
@@ -43,7 +43,7 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="app-wrapper-views"
+php artisan vendor:publish --tag="sabhero-wrapper-views"
 ```
 
 ## Usage
@@ -51,13 +51,13 @@ php artisan vendor:publish --tag="app-wrapper-views"
 Wrap your blade files using:
 
 ```php
-<x-app-wrapper::layouts.app>
+<x-sabhero-wrapper::layouts.app>
     <div class="h-screen">
         <div class="flex w-full h-full bg-gray-300">
 
         </div>
     </div>
-</x-app-wrapper::layouts.app>
+</x-sabhero-wrapper::layouts.app>
 ```
 
 ## Tailwindcss classes

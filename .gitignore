@@ -30,3 +30,5 @@ yarn-error.log
 php.ini
 error_log
 .DS_Store
+/.DS_Store
+composer.lock

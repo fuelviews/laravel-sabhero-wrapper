@@ -1,21 +1,21 @@
 <?php
 
-namespace Fuelviews\AppWrapper;
+namespace Fuelviews\SabHeroCore;
 
-use Fuelviews\AppWrapper\Models\Page;
+use Fuelviews\SabHeroCore\Models\Page;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class AppWrapperServiceProvider extends PackageServiceProvider
+class SabHeroWrapperServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('app-wrapper')
-            ->hasConfigFile('app-wrapper')
+            ->name('sabhero-wrapper')
+            ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_pages_table')
             ->hasInstallCommand(function (InstallCommand $command) {
@@ -26,16 +26,16 @@ class AppWrapperServiceProvider extends PackageServiceProvider
 
         $this->publishes([
             __DIR__.'/../database/seeders/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
-        ], 'app-wrapper-seeders');
+        ], 'sabhero-wrapper-seeders');
 
         $this->publishes([
             __DIR__.'/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
-        ], 'app-wrapper-welcome');
+        ], 'sabhero-wrapper-welcome');
     }
 
     public function bootingPackage(): void
     {
-        View::composer('app-wrapper::components.layouts.app', function ($view) {
+        View::composer('sabhero-wrapper::components.layouts.app', function ($view) {
             $routeName = Route::currentRouteName();
 
             $page = Page::where('slug', $routeName)
