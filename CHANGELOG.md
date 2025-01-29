@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.12 - 2025-01-29
+
+### What's Changed
+
+* Rename package to "laravel-sabhero-wrapper". by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/25
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/commits/v0.0.12
+
 ## v0.0.11 - 2025-01-29
 
 ### What's Changed
