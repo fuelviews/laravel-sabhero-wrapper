@@ -1,16 +1,16 @@
 <?php
 
-namespace Fuelviews\SabHeroCore\Facades;
+namespace Fuelviews\SabHeroWrapper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Fuelviews\SabHeroCore\SabHeroWrapper
+ * @see \Fuelviews\SabHeroWrapper\SabHeroWrapper
  */
 class SabHeroWrapper extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Fuelviews\SabHeroCore\SabHeroWrapper::class;
+        return \Fuelviews\SabHeroWrapper\SabHeroWrapper::class;
     }
 }

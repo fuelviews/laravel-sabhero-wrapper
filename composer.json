@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Fuelviews\\SabHeroCore\\": "src/"
+            "Fuelviews\\SabHeroWrapper\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fuelviews\\SabHeroCore\\Tests\\": "tests/",
+            "Fuelviews\\SabHeroWrapper\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -70,10 +70,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SabHeroWrapperServiceProvider"
+                "Fuelviews\\SabHeroWrapper\\SabHeroWrapperServiceProvider"
             ],
             "aliases": {
-                "SabHeroCore": "SabHeroWrapper"
+                "SabHeroWrapper": "Fuelviews\\SabHeroWrapper\\Facades\\SabHeroWrapper"
             }
         }
     },
