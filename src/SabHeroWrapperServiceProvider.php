@@ -9,12 +9,12 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class SabHeroCoreServiceProvider extends PackageServiceProvider
+class SabHeroWrapperServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('sabhero-core')
+            ->name('sabhero-wrapper')
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_pages_table')
@@ -26,16 +26,16 @@ class SabHeroCoreServiceProvider extends PackageServiceProvider
 
         $this->publishes([
             __DIR__.'/../database/seeders/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
-        ], 'sabhero-core-seeders');
+        ], 'sabhero-wrapper-seeders');
 
         $this->publishes([
             __DIR__.'/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
-        ], 'sabhero-core-welcome');
+        ], 'sabhero-wrapper-welcome');
     }
 
     public function bootingPackage(): void
     {
-        View::composer('sabhero-core::components.layouts.app', function ($view) {
+        View::composer('sabhero-wrapper::components.layouts.app', function ($view) {
             $routeName = Route::currentRouteName();
 
             $page = Page::where('slug', $routeName)

@@ -5,12 +5,12 @@ namespace Fuelviews\SabHeroCore\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Fuelviews\SabHeroCore\SabHeroCore
+ * @see \Fuelviews\SabHeroCore\SabHeroWrapper
  */
-class SabHeroCore extends Facade
+class SabHeroWrapper extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Fuelviews\SabHeroCore\SabHeroCore::class;
+        return \Fuelviews\SabHeroCore\SabHeroWrapper::class;
     }
 }

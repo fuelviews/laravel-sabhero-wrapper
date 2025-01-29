@@ -70,10 +70,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fuelviews\\SabHeroCore\\SabHeroCoreServiceProvider"
+                "SabHeroWrapperServiceProvider"
             ],
             "aliases": {
-                "SabHeroCore": "Fuelviews\\SabHeroCore\\Facades\\SabHeroCore"
+                "SabHeroCore": "SabHeroWrapper"
             }
         }
     },
