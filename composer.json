@@ -1,14 +1,14 @@
 {
-    "name": "fuelviews/app-wrapper",
+    "name": "fuelviews/sabhero-core",
     "description": "App Wrapper Package",
     "keywords": [
         "fuelviews",
         "laravel",
-        "app-wrapper",
+        "sabhero-core",
         "app",
         "wrapper"
     ],
-    "homepage": "https://github.com/fuelviews/app-wrapper",
+    "homepage": "https://github.com/fuelviews/sabhero-core",
     "license": "MIT",
     "authors": [
         {
@@ -35,18 +35,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Fuelviews\\AppWrapper\\": "src/"
+            "Fuelviews\\SabHeroCore\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fuelviews\\AppWrapper\\Tests\\": "tests/",
+            "Fuelviews\\SabHeroCore\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-app-wrapper --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-sabhero-core --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fuelviews\\AppWrapper\\AppWrapperServiceProvider"
+                "Fuelviews\\SabHeroCore\\SabHeroCoreServiceProvider"
             ],
             "aliases": {
-                "AppWrapper": "Fuelviews\\AppWrapper\\Facades\\AppWrapper"
+                "SabHeroCore": "Fuelviews\\SabHeroCore\\Facades\\SabHeroCore"
             }
         }
     },

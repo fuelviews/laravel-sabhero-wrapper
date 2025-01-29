@@ -1,8 +1,8 @@
 <?php
 
-namespace Fuelviews\AppWrapper\Tests;
+namespace Fuelviews\SabHeroCore\Tests;
 
-use Fuelviews\AppWrapper\AppWrapperServiceProvider;
+use Fuelviews\SabHeroCore\SabHeroCoreServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Fuelviews\\AppWrapper\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Fuelviews\\SabHeroCore\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            AppWrapperServiceProvider::class,
+            SabHeroCoreServiceProvider::class,
         ];
     }
 
@@ -29,7 +29,7 @@ class TestCase extends Orchestra
         config()->set('database.default', 'testing');
 
         /*
-        $migration = include __DIR__.'/../database/migrations/create_app-wrapper_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_sabhero-core_table.php.stub';
         $migration->up();
         */
     }
