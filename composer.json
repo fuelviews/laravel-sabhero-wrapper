@@ -4,9 +4,7 @@
     "keywords": [
         "fuelviews",
         "laravel",
-        "sabhero-core",
-        "app",
-        "wrapper"
+        "sabhero-core"
     ],
     "homepage": "https://github.com/fuelviews/sabhero-core",
     "license": "MIT",
