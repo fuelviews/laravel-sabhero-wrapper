@@ -2,6 +2,4 @@
 
 namespace Fuelviews\SabHeroCore;
 
-class SabHeroWrapper
-{
-}
+class SabHeroWrapper {}
