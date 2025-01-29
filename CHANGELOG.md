@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.13 - 2025-01-29
+
+### What's Changed
+
+* fix: Rename namespace to "SabHeroWrapper". by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/26
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/commits/v0.0.13
+
 ## v0.0.12 - 2025-01-29
 
 ### What's Changed

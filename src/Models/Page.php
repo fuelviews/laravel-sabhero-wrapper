@@ -1,6 +1,6 @@
 <?php
 
-namespace Fuelviews\SabHeroCore\Models;
+namespace Fuelviews\SabHeroWrapper\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use RalphJSmit\Laravel\SEO\Support\HasSEO;
