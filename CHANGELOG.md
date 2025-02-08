@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.15 - 2025-02-08
+
+### What's Changed
+
+* Refactor: Seeder, views, and migrations for consistency by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/28
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/commits/v0.0.15
+
 ## v0.0.14 - 2025-02-08
 
 ### What's Changed

@@ -25,7 +25,7 @@ class SabHeroWrapperServiceProvider extends PackageServiceProvider
             });
 
         $this->publishes([
-            __DIR__.'/../database/seeders/PagesTableSeeder.php' => database_path('seeders/PagesTableSeeder.php'),
+            __DIR__.'/../database/seeders/PageTableSeeder.php' => database_path('seeders/PageTableSeeder.php'),
         ], 'sabhero-wrapper-seeders');
 
         $this->publishes([
@@ -38,10 +38,10 @@ class SabHeroWrapperServiceProvider extends PackageServiceProvider
         View::composer('sabhero-wrapper::components.layouts.app', function ($view) {
             $routeName = Route::currentRouteName();
 
-            $page = Page::where('slug', $routeName)
+            $seoPage = Page::where('slug', $routeName)
                 ->first();
 
-            $view->with('page', $page);
+            $view->with('seoPage', $seoPage);
         });
     }
 }
