@@ -18,13 +18,9 @@ return new class extends Migration
             $table->string('slug', 80)->unique();
             $table->string('title', 80)->unique();
             $table->text('description');
-            $table->string('image', 80)->unique();
+            $table->string('feature_image', 80)->unique();
 
             $table->timestamps();
-
-            $table->index('slug');
-            $table->index('title');
-            $table->index('image');
         });
     }
 
