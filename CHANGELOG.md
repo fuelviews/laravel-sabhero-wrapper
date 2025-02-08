@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.14 - 2025-02-08
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/27
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/commits/v0.0.14
+
 ## v0.0.13 - 2025-01-29
 
 ### What's Changed
