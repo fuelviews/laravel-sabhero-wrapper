@@ -25,7 +25,7 @@ class SabHeroWrapperServiceProvider extends PackageServiceProvider
             });
 
         $this->publishes([
-            __DIR__ . '/../database/seeders/PageTableSeeder.php' => database_path('seeders/PageTableSeeder.php'),
+            __DIR__.'/../database/seeders/PageTableSeeder.php' => database_path('seeders/PageTableSeeder.php'),
         ], 'sabhero-wrapper-seeders');
 
         $this->publishes([
