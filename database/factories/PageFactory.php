@@ -16,7 +16,7 @@ class PageFactory extends Factory
             'slug' => $this->faker->slug(),
             'title' => $this->faker->word(),
             'description' => $this->faker->text(),
-            'image' => $this->faker->word(),
+            'feature_image' => $this->faker->word(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'registerMediaConversionsUsingModelInstance' => $this->faker->boolean(),
