@@ -15,8 +15,9 @@ class Page extends Model
 
     protected $fillable = [
         'title',
+        'slug',
         'description',
-        'image',
+        'feature_image',
     ];
 
     public function getDynamicSEOData(): SEOData
@@ -24,7 +25,7 @@ class Page extends Model
         return new SEOData(
             title: ucwords($this->title),
             description: ucfirst($this->description),
-            image: $this->image,
+            image: $this->feature_image,
         );
     }
 }

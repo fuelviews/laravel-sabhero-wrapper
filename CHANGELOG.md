@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.16 - 2025-02-12
+
+### What's Changed
+
+* Update pages factory and seeder by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/29
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/commits/v0.0.16
+
 ## v0.0.15 - 2025-02-08
 
 ### What's Changed

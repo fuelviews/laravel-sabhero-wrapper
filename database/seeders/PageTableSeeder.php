@@ -18,7 +18,7 @@ class PageTableSeeder extends Seeder
                 'slug' => 'home',
                 'title' => 'home page',
                 'description' => 'This is the home page description.',
-                'image' => 'images/logo.png',
+                'feature_image' => 'images/logo.png',
             ],
 
         ];
