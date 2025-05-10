@@ -23,18 +23,14 @@ class SabHeroWrapperServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     ->publishMigrations();
             });
-
-        $this->publishes([
-            __DIR__.'/../database/seeders/PageTableSeeder.php' => database_path('seeders/PageTableSeeder.php'),
-        ], 'sabhero-wrapper-seeders');
-
-        $this->publishes([
-            __DIR__.'/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
-        ], 'sabhero-wrapper-welcome');
     }
 
     public function bootingPackage(): void
     {
+        $this->publishes([
+            __DIR__.'/../database/seeders/PageTableSeeder.php' => database_path('seeders/PageTableSeeder.php'),
+        ], 'sabhero-wrapper-seeders');
+
         View::composer('sabhero-wrapper::components.layouts.app', function ($view) {
             $routeName = Route::currentRouteName();
 
