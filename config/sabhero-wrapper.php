@@ -11,7 +11,7 @@ return [
     'footer_enabled' => true,
 
     // Enable or disable Forms Modal
-    'forms_modal_enabled' => false,
+    'forms_modal_enabled' => true,
 
     // Enable or disable Google Tag Manager
     'gtm_enabled' => false,

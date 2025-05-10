@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.17 - 2025-05-10
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/30
+* Update GitHub Actions permissions to read-only and remove unnecessary GitHub token configuration. Modify README and composer.json for clarity and consistency, and enable forms modal in the configuration. by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/31
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/commits/v0.0.17
+
 ## v0.0.16 - 2025-02-12
 
 ### What's Changed
