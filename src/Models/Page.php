@@ -35,7 +35,7 @@ class Page extends Model implements HasMedia
 
     public function registerMediaConversions(?Media $media = null): void
     {
-        $this->addMediaConversion('feature_image')
+        $this->addMediaConversion('page_feature_image')
             ->withResponsiveImages()
             ->performOnCollections('page_feature_image');
     }

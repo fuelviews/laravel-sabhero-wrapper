@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.19 - 2025-07-31
+
+### What's Changed
+
+* Rename media conversion from 'feature_image' to 'post_feature_image' for better clarity and consistency in the codebase. by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/36
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v0.0.18...v0.0.19
+
 ## v0.0.18 - 2025-07-31
 
 ### What's Changed
