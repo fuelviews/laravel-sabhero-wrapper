@@ -1,10 +1,9 @@
 <?php
 
-namespace database\seeders;
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
+use Fuelviews\SabHeroWrapper\Models\Page;
 
 class PageTableSeeder extends Seeder
 {
@@ -13,34 +12,46 @@ class PageTableSeeder extends Seeder
      */
     public function run(): void
     {
+        // Check if a Page model exists from any package
+        $pageModel = null;
+
+        if (class_exists(Page::class)) {
+            $pageModel = Page::class;
+        }
+
+        if (!$pageModel) {
+            $this->command->warn('No Page model found. Skipping page seeder.');
+            return;
+        }
+
         $pages = [
             [
+                'title' => 'Home Page',
                 'slug' => 'home',
-                'title' => 'home page',
-                'description' => 'This is the home page description.',
-                'feature_image' => 'images/logo.png',
+                'description' => 'Welcome....',
+                'feature_image' => 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=600&fit=crop',
             ],
-
         ];
 
-        foreach ($pages as $page) {
-            $page['slug'] = Str::lower($page['slug']);
-            $page['title'] = Str::lower($page['title']);
-            $page['image'] = 'glide/'.Str::lower($page['image']).'?width=1200';
-            $page['updated_at'] = now();
-
-            $existingPage = DB::table('pages')->where('slug', $page['slug'])->first();
+        foreach ($pages as $pageData) {
+            // Check if a page with this slug OR title already exists
+            $existingPage = $pageModel::where('slug', $pageData['slug'])
+                ->orWhere('title', $pageData['title'])
+                ->first();
 
             if ($existingPage) {
-                $page['created_at'] = $existingPage->created_at ?? now();
+                // Update existing page (prioritize finding by slug)
+                $pageBySlug = $pageModel::where('slug', $pageData['slug'])->first();
+                if ($pageBySlug) {
+                    $pageBySlug->update($pageData);
+                } else {
+                    // If found by title, update that one
+                    $existingPage->update($pageData);
+                }
             } else {
-                $page['created_at'] = now();
+                // Create new page only if neither slug nor title exist
+                $pageModel::create($pageData);
             }
-
-            DB::table('pages')->updateOrInsert(
-                ['slug' => $page['slug']],
-                $page
-            );
         }
     }
 }
