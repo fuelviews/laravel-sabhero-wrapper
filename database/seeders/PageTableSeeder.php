@@ -26,9 +26,9 @@ class PageTableSeeder extends Seeder
 
         $pages = [
             [
-                'title' => 'Professional House Painters in Colorado Springs - Denver - Castle Rock',
+                'title' => 'Title one',
                 'slug' => 'home',
-                'description' => 'Welcome to LoCOl Paint - Your LoCal Residential & Commercial Painting Company. Professional painting services in Colorado Springs and Denver.',
+                'description' => 'Description here.',
                 'feature_image' => 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=600&fit=crop',
             ]
         ];

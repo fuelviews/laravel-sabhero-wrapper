@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.20 - 2025-07-31
+
+### What's Changed
+
+* Tweak seeder by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/37
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v0.0.19...v0.0.20
+
 ## v0.0.19 - 2025-07-31
 
 ### What's Changed
