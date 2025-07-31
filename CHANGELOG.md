@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.18 - 2025-07-31
+
+### What's Changed
+
+* Add dep refactor model by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/35
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v0.0.17...v0.0.18
+
 ## v0.0.17 - 2025-05-10
 
 ### What's Changed
