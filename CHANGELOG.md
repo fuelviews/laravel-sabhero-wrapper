@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v0.0.21 - 2025-08-07
+
+### What's Changed
+
+* Remove unused imports and deprecated bootingPackage method to clean up the service provider. #major by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/38
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v0.0.20...v0.0.21
+
 ## v0.0.20 - 2025-07-31
 
 ### What's Changed
