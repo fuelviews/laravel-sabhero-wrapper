@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v1.0.0 - 2025-08-20
+
+### What's Changed
+
+* Add comprehensive Laravel SAB Hero Wrapper package with configuration service provider, models, factories, migrations, and tests; improve documentation and setup instructions; enforce PHP 8.3 requirement and enhance code quality with Rector integration. #major by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/39
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v0.0.21...v1.0.0
+
 ## v0.0.21 - 2025-08-07
 
 ### What's Changed
