@@ -35,7 +35,7 @@
 
 {{ $slot }}
 
-@if (class_exists(\Fuelviews\Navigation\View\Components\Footer\Footer::class) && config('sabhero-wrapper.footer_enabled'))
+@if (class_exists(\Fuelviews\Navigation\Components\Footer\Footer::class) && config('sabhero-wrapper.footer_enabled'))
     @component('navigation::components.footer.footer')
     @endcomponent
 @endif
