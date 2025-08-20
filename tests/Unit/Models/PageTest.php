@@ -1,7 +1,6 @@
 <?php
 
 use Fuelviews\SabHeroWrapper\Models\Page;
-use RalphJSmit\Laravel\SEO\Support\SEOData;
 
 it('has fillable attributes', function () {
     $fillable = [
