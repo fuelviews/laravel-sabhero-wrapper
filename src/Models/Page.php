@@ -2,6 +2,8 @@
 
 namespace Fuelviews\SabHeroWrapper\Models;
 
+use Fuelviews\SabHeroWrapper\Database\Factories\PageFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use RalphJSmit\Laravel\SEO\Support\HasSEO;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
@@ -14,6 +16,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  */
 class Page extends Model implements HasMedia
 {
+    use HasFactory;
     use HasSEO;
     use InteractsWithMedia;
 
@@ -23,6 +26,11 @@ class Page extends Model implements HasMedia
         'description',
         'feature_image',
     ];
+
+    protected static function newFactory(): PageFactory
+    {
+        return PageFactory::new();
+    }
 
     public function getDynamicSEOData(): SEOData
     {

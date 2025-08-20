@@ -1,7 +1,5 @@
 <?php
 
-namespace database\migrations;
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,7 +16,7 @@ return new class extends Migration
             $table->string('slug', 80)->unique();
             $table->string('title', 80)->unique();
             $table->text('description');
-            $table->string('feature_image', 80)->unique()->nullable();
+            $table->string('feature_image', 80)->nullable();
 
             $table->timestamps();
         });

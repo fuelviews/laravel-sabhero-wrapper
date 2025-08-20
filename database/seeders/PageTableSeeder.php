@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use Fuelviews\SabHeroWrapper\Models\Page;
+use Illuminate\Database\Seeder;
 
 class PageTableSeeder extends Seeder
 {
@@ -19,8 +19,9 @@ class PageTableSeeder extends Seeder
             $pageModel = Page::class;
         }
 
-        if (!$pageModel) {
+        if (! $pageModel) {
             $this->command->warn('No Page model found. Skipping page seeder.');
+
             return;
         }
 
@@ -30,7 +31,7 @@ class PageTableSeeder extends Seeder
                 'slug' => 'home',
                 'description' => 'Description here.',
                 'feature_image' => 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=600&fit=crop',
-            ]
+            ],
         ];
 
         foreach ($pages as $pageData) {
@@ -63,12 +64,12 @@ class PageTableSeeder extends Seeder
             // Add feature image to media library if URL provided and model supports it
             if ($featureImageUrl && $page && method_exists($page, 'hasMedia') && method_exists($page, 'addMediaFromUrl')) {
                 try {
-                    if (!$page->hasMedia('page_feature_image')) {
+                    if (! $page->hasMedia('page_feature_image')) {
                         $page->addMediaFromUrl($featureImageUrl)
                             ->toMediaCollection('page_feature_image');
                     }
                 } catch (\Exception $e) {
-                    $this->command->warn("Could not add feature image for page '{$page->title}': " . $e->getMessage());
+                    $this->command->warn("Could not add feature image for page '{$page->title}': ".$e->getMessage());
                 }
             }
         }

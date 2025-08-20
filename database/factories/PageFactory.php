@@ -1,11 +1,13 @@
 <?php
 
-namespace database\factories;
+namespace Fuelviews\SabHeroWrapper\Database\Factories;
 
 use Fuelviews\SabHeroWrapper\Models\Page;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Carbon;
 
+/**
+ * @extends Factory<Page>
+ */
 class PageFactory extends Factory
 {
     protected $model = Page::class;
@@ -13,13 +15,10 @@ class PageFactory extends Factory
     public function definition(): array
     {
         return [
-            'slug' => $this->faker->slug(),
-            'title' => $this->faker->word(),
-            'description' => $this->faker->text(),
-            'feature_image' => $this->faker->word(),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-            'registerMediaConversionsUsingModelInstance' => $this->faker->boolean(),
+            'slug' => $this->faker->unique()->slug(),
+            'title' => $this->faker->unique()->sentence(3),
+            'description' => $this->faker->paragraph(),
+            'feature_image' => $this->faker->optional()->imageUrl(640, 480, 'business'),
         ];
     }
 }
