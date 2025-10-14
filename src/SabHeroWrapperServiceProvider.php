@@ -55,7 +55,7 @@ class SabHeroWrapperServiceProvider extends PackageServiceProvider
         View::composer('sabhero-wrapper::components.layouts.app', function ($view) {
             $routeName = Route::currentRouteName();
 
-            $seoPage = Page::where('slug', $routeName)
+            $seoPage = Page::where('route', $routeName)
                 ->first();
 
             $view->with('seoPage', $seoPage);
