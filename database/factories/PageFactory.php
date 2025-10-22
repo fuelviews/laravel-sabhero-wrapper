@@ -18,7 +18,7 @@ class PageFactory extends Factory
             'slug' => $this->faker->unique()->slug(),
             'title' => $this->faker->unique()->sentence(3),
             'description' => $this->faker->paragraph(),
-            'feature_image' => $this->faker->optional()->imageUrl(640, 480, 'business'),
+            'page_feature_image' => $this->faker->optional()->imageUrl(640, 480, 'business'),
         ];
     }
 }

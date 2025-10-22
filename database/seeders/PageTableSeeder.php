@@ -30,14 +30,14 @@ class PageTableSeeder extends Seeder
                 'title' => 'Title one',
                 'slug' => 'home',
                 'description' => 'Description here.',
-                'feature_image' => 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=600&fit=crop',
+                'page_feature_image' => 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=600&fit=crop',
             ],
         ];
 
         foreach ($pages as $pageData) {
             // Extract feature image URL if present
-            $featureImageUrl = $pageData['feature_image'] ?? null;
-            unset($pageData['feature_image']); // Remove from page data
+            $featureImageUrl = $pageData['page_feature_image'] ?? null;
+            unset($pageData['page_feature_image']); // Remove from page data
 
             // Check if a page with this slug OR title already exists
             $existingPage = $pageModel::where('slug', $pageData['slug'])
