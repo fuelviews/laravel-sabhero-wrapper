@@ -2,6 +2,16 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v2.0.0 - 2025-10-14
+
+### What's Changed
+
+* Bump platisd/openai-pr-description from 1.4.0 to 1.5.0 by @dependabot[bot] in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/42
+* Bump anothrNick/github-tag-action from 1.73.0 to 1.75.0 by @dependabot[bot] in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/40
+* Fix SEO page retrieval by querying with route name instead of slug for accurate matching. by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/44
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v1.0.0...v2.0.0
+
 ## v1.0.0 - 2025-08-20
 
 ### What's Changed
