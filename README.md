@@ -3,7 +3,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fuelviews/laravel-sabhero-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/laravel-sabhero-wrapper)
 [![Total Downloads](https://img.shields.io/packagist/dt/fuelviews/laravel-sabhero-wrapper.svg?style=flat-square)](https://packagist.org/packages/fuelviews/laravel-sabhero-wrapper)
 [![Tests](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-sabhero-wrapper/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/fuelviews/laravel-sabhero-wrapper/actions/workflows/run-tests.yml)
-[![PHPStan](https://img.shields.io/github/actions/workflow/status/fuelviews/laravel-sabhero-wrapper/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/fuelviews/laravel-sabhero-wrapper/actions/workflows/phpstan.yml)
 
 A comprehensive Laravel package that provides a unified wrapper layout for integrating multiple Fuelviews components and third-party packages. This package serves as the foundation for building consistent, feature-rich web applications with integrated navigation, forms, SEO optimization, analytics, and more.
 
@@ -79,7 +78,7 @@ $page = Page::create([
     'title' => 'About Us',
     'slug' => 'about',
     'description' => 'Learn more about our company and mission.',
-    'feature_image' => 'path/to/image.jpg'
+    'page_feature_image' => 'path/to/image.jpg'
 ]);
 
 // Add feature image via media library

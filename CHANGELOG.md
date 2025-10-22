@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-sabhero-wrapper` will be documented in this file.
 
+## v2.1.0 - 2025-10-22
+
+### What's Changed
+
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/41
+* Rename 'feature_image' to 'page_feature_image' across the codebase and database schema for consistency and clarity; update related references and documentation accordingly. Remove PHPStan badge from README. by @thejmitchener in https://github.com/fuelviews/laravel-sabhero-wrapper/pull/45
+
+**Full Changelog**: https://github.com/fuelviews/laravel-sabhero-wrapper/compare/v2.0.0...v2.1.0
+
 ## v2.0.0 - 2025-10-14
 
 ### What's Changed

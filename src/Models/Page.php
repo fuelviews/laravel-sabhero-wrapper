@@ -24,7 +24,7 @@ class Page extends Model implements HasMedia
         'title',
         'slug',
         'description',
-        'feature_image',
+        'page_feature_image',
     ];
 
     protected static function newFactory(): PageFactory
