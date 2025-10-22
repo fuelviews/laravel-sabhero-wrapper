@@ -7,7 +7,7 @@ it('has fillable attributes', function () {
         'title',
         'slug',
         'description',
-        'feature_image',
+        'page_feature_image',
     ];
 
     $page = new Page();
